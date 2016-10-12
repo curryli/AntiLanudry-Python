@@ -1,0 +1,3 @@
+tbl_arsvc_sus_card_trans.csv是风险部提供的可疑交易信息表，有些数据可能不全
+readbyline.py将信息表中的所有卡号全部提取到cardsout.csv中，然后使用encode.sh对这些卡号进行加密存到hive表中
+方便后续操作（因为原来hive表中的卡号信息也全是加密过的，方便对比）
