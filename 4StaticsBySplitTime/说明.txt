@@ -1,3 +1,5 @@
+分段时间内的交易明细
+
 在3按多个列属性排序中得到了SortedInNew.txt，将它作为现在的输入SortedIn.txt
 
 
