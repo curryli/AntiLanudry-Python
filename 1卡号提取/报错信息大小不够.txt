@@ -1,0 +1,4 @@
+set hive.input.format=org.apache.hadoop.hive.ql.io.CombineHiveInputFormat;
+set mapred.max.split.size=1024000000;
+set mapred.min.split.size.per.node=1024000000;
+set mapred.min.split.size.per.rack=1024000000;

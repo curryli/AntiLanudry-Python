@@ -1,0 +1,4 @@
+RecordTrans.sh
+根据Allcards.txt的所有卡号再到hive表中进行数据筛选，结果存在目录RelatedAsIn  RelatedAsOut
+然后将目录合并，得到文件MergedIn.txt  MergedOut.txt
+然后根据AllCardDicts 词典，将原来交易信息中的卡号替换为相应编号

@@ -1,0 +1,25 @@
+AllCardDicts.txt    记录银行卡号与编号的一一对应文件
+DateDicts.txt  记录交易日期与编号的一一对应文件
+
+时间2015年3、4月份的交易
+10张可疑卡，以及随机的50张正常卡作为原始数据
+迭代10轮关联交易后，作为所有账号集合。
+
+
+前面已经得到
+提取账号作为转入方的交易记录 MappedIn.txt
+提取账号作为转出方的交易记录 MappedOut.txt
+这两个文件合并为MappedInOut.txt
+转入账号 转出账号 交易金额 交易地区代码 交易时间
+
+根据MappedInOut.txt交易信息
+
+GetInOut('MappedInOut.txt','GetInOut.txt')
+        createNet('GetInOut.txt','Net.txt')
+得到每笔交易的输入输出
+
+然后createNet('GetInOut.txt','Net.txt') 得到交易网络
+
+
+CountSum.py根据MappedInOut.txt得到每个卡号相关的交易金额和次数
+
